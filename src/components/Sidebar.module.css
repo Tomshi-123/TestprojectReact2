@@ -1,0 +1,36 @@
+.sidebar {
+  z-index: 50;
+}
+
+.bubbleOpen {
+  transform: translateX(0) scale(1);
+  transform-origin: top left;
+  animation: bubbleGrow 0.3s ease-in-out forwards;
+}
+
+.bubbleClosed {
+  transform: translateX(-100%) scale(0);
+  transform-origin: top left;
+}
+
+@keyframes bubbleGrow {
+  0% {
+    transform: translateX(-100%) scale(0);
+  }
+  50% {
+    transform: translateX(-50%) scale(0.5);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+.customSidebar {
+  background-color: #13192e00;  /* Custom dark gray */
+}
+
+@media (max-width: 767px) {
+  .customSidebar {
+    background-color: #1c1f44; /* Small screen color (e.g., teal-600) */
+  }
+}

@@ -1,0 +1,53 @@
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #00ffaa; /* Lime-green for space theme */
+}
+
+.rotate {
+  animation: rotateLogo 10s linear infinite;
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.usersIcon {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.customNavbar {
+  background: radial-gradient(circle at center, #1e3a8a 0%, #0f172a 100%); /* Custom navy blue */
+  position: relative; /* For positioning context */
+  animation: pulseGlow 1.5s ease-in-out infinite; /* Apply pulsing glow */
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 2px 4px rgba(74, 222, 128, 0.2); /* Weak glow */
+  }
+  50% {
+    box-shadow: 0 2px 12px rgba(74, 222, 128, 0.8); /* Strong glow */
+  }
+  100% {
+    box-shadow: 0 2px 4px rgba(74, 222, 128, 0.2); /* Weak glow */
+  }
+}
