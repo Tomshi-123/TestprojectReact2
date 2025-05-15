@@ -1,4 +1,5 @@
 .customPosts {
+  text-align:center;
   position: fixed;
   top: 64px;     /* navbar-höjd */
   bottom: 64px;  /* footer-höjd */
@@ -13,6 +14,7 @@
   box-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
   box-sizing: border-box;
   z-index: 10;
+  
 }
 
 .postsTitle {
