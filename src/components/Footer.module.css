@@ -1,19 +1,29 @@
 .customFooter {
-  background: radial-gradient(circle at center, #1e3a8a 0%, #0f172a 100%); /* Custom navy blue */
-  position: relative; /* For positioning context */
-  animation: pulseGlow 1.5s ease-in-out infinite; /* Apply pulsing glow */
+  background: radial-gradient(circle at center, #1e3a8a 0%, #0f172a 100%); /* Behåller din ursprungliga gradient */
+  position: absolute; /* Placerar footer längst ner relativt föräldern */
+  bottom: 0; /* Fäster footer vid botten */
+  width: 100%; /* Säkerställer full bredd */
+  padding: 1rem 0; /* Vertikal padding för innehåll */
+  border-top: 2px solid #4ade80; /* Grön kant överst */
+  text-align: center; /* Centrerar text */
+  color: #ffffff; /* Vit text */
+  opacity: 1; /* Full opacitet */
+  z-index: 1000; /* Hög z-index för att ligga över alla andra element */
+  animation: pulseGlow 1.5s ease-in-out infinite; /* Pulserande glow-effekt */
 }
 
-
+.footerText {
+  color: #4ade80; /* Grön text för copyright */
+}
 
 @keyframes pulseGlow {
   0% {
-    box-shadow: 0 2px 4px rgba(74, 222, 128, 0.2); /* Weak glow */
+    box-shadow: 0 2px 4px rgba(74, 222, 128, 0.2); /* Svag glow */
   }
   50% {
-    box-shadow: 0 2px 12px rgba(74, 222, 128, 0.8); /* Strong glow */
+    box-shadow: 0 2px 12px rgba(74, 222, 128, 0.8); /* Stark glow, fixade syntax från 'box shadowing' */
   }
   100% {
-    box-shadow: 0 2px 4px rgba(74, 222, 128, 0.2); /* Weak glow */
+    box-shadow: 0 2px 4px rgba(74, 222, 128, 0.2); /* Svag glow */
   }
 }
