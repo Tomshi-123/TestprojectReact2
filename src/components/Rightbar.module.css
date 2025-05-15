@@ -30,3 +30,41 @@
     background-color: #1c1f44; /* Small screen color (e.g., teal-600) */
   }
 }
+
+.rainLine {
+  position: absolute;
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(0, 255, 0, 0), rgba(0, 255, 0, 0.7));
+  animation: matrixRain 1s linear infinite;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@keyframes matrixRain {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(150%);
+    opacity: 0.1;
+  }
+}
+
+.rainEffect {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .customRightbar {
+    background-color: #1c1f44; /* Small screen color (e.g., teal-600) */
+  }
+}
