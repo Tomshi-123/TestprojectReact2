@@ -1,22 +1,16 @@
 .customPosts {
-  text-align: center;
+  flex: 1;
+  overflow-y: auto;
   background-color: #0a527c69;
-  position: absolute;
-  top: 8%;
-  left: 50%;
-  transform: translateX(-50%);
-  padding-top: 1rem;
-  border-radius: 0.125rem;
+  padding: 1.5rem 1rem;
   box-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
-  opacity: 1;
-  width: 100%;
+  border-radius: 0.125rem;
   max-width: 48rem;
-  height: 85%; /* maxhöjd för att aktivera scroll vid behov */
-  overflow-y: auto; /* tillåter vertikal scroll */
-  z-index: 10;
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-
 }
 
 

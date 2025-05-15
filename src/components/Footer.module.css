@@ -1,6 +1,6 @@
 .customFooter {
   background: radial-gradient(circle at center, #1e3a8a 0%, #0f172a 100%); /* Behåller din ursprungliga gradient */
-  position: absolute; /* Placerar footer längst ner relativt föräldern */
+  position: fixed; /* Placerar footer längst ner relativt föräldern */
   bottom: 0; /* Fäster footer vid botten */
   width: 100%; /* Säkerställer full bredd */
   padding: 1rem 0; /* Vertikal padding för innehåll */

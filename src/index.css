@@ -23,3 +23,12 @@ body::before {
   opacity: 0.2;
   z-index: -1;
 }
+
+main {
+  position: fixed;
+  top: 4rem;       /* navbar-höjd */
+  bottom: 4rem;    /* footer-höjd */
+  left: 0;
+  right: 0;
+  overflow: hidden; /* förhindra sid-scroll */
+}
