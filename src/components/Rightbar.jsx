@@ -1,7 +1,7 @@
 import styles from './Rightbar.module.css';
 
 function Rightbar({ isOpen, toggleRightbar }) {
-  const sidebarHeight = 600; // Justera efter din sidebar höjd
+  const sidebarHeight = 600; // Adjust based on your sidebar height
 
   const glitterLines = Array.from({ length: 42 }).map((_, i) => {
     const initialTop = Math.random() * (sidebarHeight + 40) - 40;
@@ -36,7 +36,13 @@ function Rightbar({ isOpen, toggleRightbar }) {
         ×
       </button>
 
-      {/* Innehåll här */}
+      <div className={styles.buttonContainer}>
+        {['Knapp 1', 'Knapp 2', 'Knapp 3', 'Knapp 4', 'Knapp 5', 'Knapp 6'].map((label, index) => (
+          <button key={index} className={styles.pixelButton}>
+            {label}
+          </button>
+        ))}
+      </div>
     </aside>
   );
 }

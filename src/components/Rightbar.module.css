@@ -22,12 +22,12 @@
 }
 
 .customRightbar {
-  background-color: #13192e;  /* Custom teal */
+  background-color: #13192e; /* Custom teal */
 }
 
 @media (max-width: 767px) {
   .customRightbar {
-    background-color: #1c1f44; /* Small screen color (e.g., teal-600) */
+    background-color: #1c1f44; /* Small screen color */
   }
 }
 
@@ -63,8 +63,59 @@
   pointer-events: none;
 }
 
-@media (max-width: 767px) {
-  .customRightbar {
-    background-color: #1c1f44; /* Small screen color (e.g., teal-600) */
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  z-index: 10;
+  position: relative;
+  height: calc(100% - 60px);
+}
+
+.pixelButton {
+  background: rgba(0, 255, 0, 0.1);
+  border: 2px solid rgba(0, 255, 0, 0.4);
+  color: rgba(0, 255, 0, 0.8);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+  width: 80%;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  position: relative;
+  box-shadow: 0 0 6px rgba(0, 255, 0, 0.3);
+}
+
+.pixelButton:hover {
+  background: #00ff00; /* Lime green */
+  color: #000000;
+  border-color: #00ff00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+  animation: glitch 0.3s ease;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, -2px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
   }
 }
