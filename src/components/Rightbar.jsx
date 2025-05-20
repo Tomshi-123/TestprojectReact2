@@ -37,7 +37,7 @@ function Rightbar({ isOpen, toggleRightbar }) {
       </button>
 
       <div className={styles.buttonContainer}>
-        {['Knapp 1', 'Knapp 2', 'Knapp 3', 'Knapp 4', 'Knapp 5', 'Knapp 6'].map((label, index) => (
+        {['按钮一 ', '按钮二', '按钮三', '按钮四', '按钮五', '按钮六'].map((label, index) => (
           <button key={index} className={styles.pixelButton}>
             {label}
           </button>

@@ -77,7 +77,7 @@
 .pixelButton {
   background: rgba(0, 255, 0, 0.1);
   border: 2px solid rgba(0, 255, 0, 0.4);
-  color: rgba(0, 255, 0, 0.8);
+  color: #d6f8d6cc;
   font-family: 'Press Start 2P', cursive;
   font-size: 12px;
   padding: 10px 14px;
