@@ -4,20 +4,16 @@ import Post from './Posts';
 function PostList() {
   const posts = [
     {
-      title: 'Inlägg 1',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...'
+      title: 'This is The Post Title 1',
+      text: 'The Post Body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
-      title: 'Inlägg 2',
-      text: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
+      title: 'This is The Post Title 2',
+      text: 'The Post Body: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
-      title: 'Inlägg 3',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...'
-    },
-    {
-      title: 'Inlägg 4',
-      text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...'
+      title: 'This is The Post Title 3',
+      text: 'The Post Body: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     }
   ];
 

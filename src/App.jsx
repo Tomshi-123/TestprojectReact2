@@ -1,8 +1,9 @@
 import Navbar from './components/Navbar.jsx';
 import Sidebar from './components/Sidebar.jsx';
-import PostList from './components/PostList.jsx'; // ✅ rätt komponent
+import Header from './components/Header.jsx';
+import PostList from './components/PostList.jsx';
+import TagList from './components/TagList.jsx';
 import Rightbar from './components/Rightbar.jsx';
-import Footer from './components/Footer.jsx';
 import { useState } from 'react';
 
 function App() {
@@ -13,14 +14,21 @@ function App() {
   const toggleRightbar = () => setIsRightbarOpen(prev => !prev);
 
   return (
-    <div className="flex flex-col min-h-screen w-full bg-blue-950 opacity-100 relative overflow-hidden">
+    <div className="relative min-h-screen bg-blue-950 text-white">
       <Navbar toggleSidebar={toggleSidebar} toggleRightbar={toggleRightbar} />
+      <div className="pt-16">
+        <Header />
+        <main className="max-w-7xl mx-auto px-4 my-8 flex flex-col md:flex-row gap-8">
+          <div className="flex-1 bg-[#0a527c69] rounded-md shadow-lg p-6">
+            <PostList />
+          </div>
+          <div className="w-full md:w-64 bg-[#67baebf0] rounded-md shadow-lg p-6">
+            <TagList />
+          </div>
+        </main>
+      </div>
       <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-      <main className="relative flex-1 opacity-100">
-        <PostList /> {/* ✅ rätt komponent */}
-        <Rightbar isOpen={isRightbarOpen} toggleRightbar={toggleRightbar} />
-      </main>
-      <Footer />
+      <Rightbar isOpen={isRightbarOpen} toggleRightbar={toggleRightbar} />
     </div>
   );
 }
