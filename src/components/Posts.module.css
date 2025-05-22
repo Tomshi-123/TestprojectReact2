@@ -111,6 +111,14 @@
 @media (max-width: 640px) {
   .customPosts {
     padding: 1rem;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .posts-container {
+    width:100%;
   }
 
   .postsTitle {

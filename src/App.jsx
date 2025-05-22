@@ -19,7 +19,7 @@ function App() {
       <div className="pt-16">
         <Header />
         <main className="max-w-7xl mx-auto px-4 my-8 flex flex-col md:flex-row gap-8">
-          <div className="flex-1 bg-[#0a527c69] rounded-md shadow-lg p-6">
+          <div className="posts-container">
             <PostList />
           </div>
           <div className="w-full md:w-64 bg-[#67baebf0] rounded-md shadow-lg p-6">

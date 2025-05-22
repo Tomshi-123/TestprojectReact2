@@ -5,7 +5,7 @@
   text-align: center; 
   align-self: center;
   justify-self: center;
-  width: 50%;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
@@ -70,10 +70,11 @@
 @media (max-width: 640px) {
   .header {
     padding: 2rem 0.5rem;
+    width: 100%; /* Lägg till denna rad */
   }
 
   .title {
-    font-size: 1.8rem;
+    font-size: 3.5rem;
   }
 
   .subtitle {
